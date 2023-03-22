@@ -5,7 +5,7 @@ const Navbar = () =>{
     const {user, setUser} = useUserContext()
     return (
         <>
-        <nav className="navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-dark bg-dark sticky-top">
             <div className="container">
                 <NavLink to="/" className="btn btn-outline-primary">Home</NavLink>
 

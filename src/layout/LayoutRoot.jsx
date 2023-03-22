@@ -7,7 +7,7 @@ const LayoutRoot = () => {
     return (
         <>
         <Navbar></Navbar>
-        <main className="container">
+        <main className="container col-lg-6 mx-auto">
             {
                 navigation.state === 'loading' && (
                     <div className="alert alert-info my-5">Loading...</div>
