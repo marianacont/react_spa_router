@@ -6,6 +6,7 @@ const Blog = () => {
 
      return <>
         <h1 className="py-5 text-center">Blog</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, pariatur eligendi? Id illum blanditiis eius autem nemo iusto non explicabo consequuntur. Ipsum, vel. Cupiditate placeat quae reprehenderit aut repellat rerum, odio a corrupti, sint esse laudantium asperiores eaque tempore cum sunt commodi, facilis aspernatur laborum totam. Sequi ab non ea.</p>
         <ul className="list-group ">
             {posts.length > 0  ? (
                 posts.map((post) => (

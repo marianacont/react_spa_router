@@ -1,13 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutRoot from "../layout/LayoutRoot"
 import Inicio from "../pages/Inicio"
-import Nosotros from "../pages/Nosotros";
+import Login from "../pages/Login"
 import Dashboard from "../pages/Dashboard";
 import Blog from "../pages/Blog";
 import Post, { loaderPost } from "../pages/Post";
 import NotFound from "../pages/NotFound";
 import loaderBlog from "../components/LoaderBlog";
 import LayoutPrivate from "../layout/LayoutPrivate";
+import Register from "../pages/Register";
 
 export const router = createBrowserRouter([
     {
@@ -23,8 +24,12 @@ export const router = createBrowserRouter([
                         element: <Inicio></Inicio>,
                     },
                     {
-                        path: "/nosotros",
-                        element: <Nosotros></Nosotros>,
+                        path: "/login",
+                        element: <Login/>,
+                    },
+                    {
+                        path:"/register",
+                        element: <Register />
                     },
                     {
                         path: "/blog",

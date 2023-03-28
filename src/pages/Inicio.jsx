@@ -14,13 +14,7 @@ const Inicio = () => {
     return <>
         <h1 className="py-5 text-center">Bienvenidos</h1>
 
-        <div className="text-center m-2 mb-5 p-4 border border-info border-3 rounded">
-            <button 
-            onClick={handleLogin} 
-            className="btn btn-info" 
-            type="button">
-                Iniciar sesión</button>
-        </div>
+
 
 
         <p>Esta es una app o SPA creada con React en la que utilizamos React Router.
@@ -42,6 +36,16 @@ const Inicio = () => {
         <hr />
         <p>
         <strong>Aclaración:</strong> Este sitio simula un inicio de sesión, pero no contiene ninguna funcionalidad de backend, por lo que sólo se trata de un ejercicio práctico para comprender el uso de rutas privadas.
+        </p>
+        <hr />
+        <h2>Firebase</h2>
+        <p>Firebase es una plataforma de desarrollo de apps que te ayuda a compilar y desarrollar las apps
+        <br /> Permite trabajar con base de datos y autenticación. También provee hosting de proyectos.
+            <br />
+        Firebase ofrece un backend ya configurado y vamos a poder administrarlo sin necesidad de tener que configurarlo ya que no demanda conocimientos de backend.
+        <br />
+        Mediante Firebase puedo seleccionar un método de autenticació para los usuarios que visiten mi página: email y contraseña, teléfono, Google, Facebook, etc. Creé un método simple con email y contraseña y registré un usuario para hacer pruebas. Con los métodos <span>createUserWithEmailAndPassword</span> y <span> signInWithEmailAndPassword</span> puedo registrar un usuario e iniciar sesión respectivamente.
+        
         </p>
     </>
 }
