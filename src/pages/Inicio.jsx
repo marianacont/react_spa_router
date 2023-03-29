@@ -47,6 +47,8 @@ const Inicio = () => {
         Mediante Firebase puedo seleccionar un método de autenticació para los usuarios que visiten mi página: email y contraseña, teléfono, Google, Facebook, etc. Creé un método simple con email y contraseña y registré un usuario para hacer pruebas. Con los métodos <span>createUserWithEmailAndPassword</span> y <span> signInWithEmailAndPassword</span> puedo registrar un usuario e iniciar sesión respectivamente.
         
         </p>
+        <hr />
+        <p><strong>Formik | Yup:</strong> Para la construcción y validación del formulario estoy utilizand Formik y Yup. En una primera instancia lo hice de manera manual, para luego reemplazar con estas librerías y experimentar sus funcionalidades.</p>
     </>
 }
 
