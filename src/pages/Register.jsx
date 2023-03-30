@@ -1,9 +1,9 @@
-import { useState } from "react"
 import { register } from "../config/firebase"
 import { useUserContext } from "../context/UserContext"
 import { useRedirectActiveUser } from "../hooks/useRedirectActiveUser"
 import { Formik } from "formik"
 import * as Yup from 'yup';
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -34,7 +34,12 @@ const Register = () => {
 
     return (
         <>
-        <div className="container vh-100 d-inline-block">
+        <div className="container mt-5 w-75">
+            <div className="row align-items-stretch">
+            <div className="img-reg col d-none d-md-block col-md-5 col-md-5 col-xl-6">
+            </div>
+
+            <div className="col">
             <h1 className="py-5 text-primary">Nuevo usuario</h1>
 
         <Formik
@@ -86,15 +91,15 @@ const Register = () => {
                     </div> */}
 
                     <button type="submit" className="btn btn-primary">Enviar</button>
-
+                    <div className="blockquote-footer py-5">Si ya tenés un usuario <Link to='/Login'>ingresá con tus datos</Link></div>
                   
                 </form>
             )
         }
 
         </Formik>
-
-
+        </div>
+        </div>
         </div>
         
 

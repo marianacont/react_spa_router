@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { loginAuth } from "../config/firebase"
 import { useUserContext } from "../context/UserContext"
 import { Formik } from "formik";
@@ -44,7 +44,12 @@ const Login = () => {
 
     return (
         <>
-        <div className="container vh-100 d-inline-block">
+        <div className="container vh-75 w-75 mt-5">
+        <div className="row align-items-stretch">
+            <div className="img-log col d-none d-md-block col-md-5 col-md-5 col-xl-6">
+            </div>
+
+            <div className="col">
             <h1 className="py-5 text-primary">Login</h1>
 
             {/* Formik */}
@@ -97,12 +102,14 @@ const Login = () => {
                         <div className="blockquote-footer py-5">Para probar el login, ingresá los datos iguientes:
                             <br />Email: juan@test.com
                             <br />Contraseña: 123456
+                            <br />O bien <Link to='/Register'>creá un nuevo usuario</Link> 
                         </div>
                     </form>
                     )
                 }
             </Formik>
-
+            </div>
+            </div>
         </div>
         
 

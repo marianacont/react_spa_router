@@ -17,6 +17,7 @@ const Dashboard = () => {
         <p>Esta es una ruta protegida a la que solo tienen acceso los usuarios que han iniciado sesión correctamente</p>
 
         <button onClick={handleLogOut} className="btn btn-success" >Cerrar sesión</button>
+        <div className="bg-div"></div>
     </>
 }
 

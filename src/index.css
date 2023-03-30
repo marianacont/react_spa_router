@@ -1,0 +1,24 @@
+.img-reg {
+    background: url(assets/img/register.jpg)  center no-repeat;
+    background-size: contain;
+    margin-right: 2rem;
+}
+
+.img-log {
+    background: url(assets/img/login.jpg) center no-repeat;
+    background-size: contain;
+    margin-right: 2rem;
+}
+
+.bg-div {
+    background: url(assets/img/diversidad.jpg) center no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+    height: 10rem;
+}
+
+.blog {
+    background: url(assets/img/blog.jpg) center no-repeat;
+    background-size: contain;
+    height: 10rem;
+}
