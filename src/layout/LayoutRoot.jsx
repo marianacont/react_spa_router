@@ -15,7 +15,7 @@ const LayoutRoot = () => {
             }
             <Outlet ></Outlet>
         </main>
-        <footer className="container text-bg-primary p-3 mt-5 text-center">Diseñado por <a className="text-white " href="https://marianaconti.vercel.com">Mariana Conti</a></footer>
+        <footer className="container text-bg-primary p-3 mt-5 text-center">Diseñado por <a className="text-white " href="https://marianaconti.vercel.app">Mariana Conti</a></footer>
         </>
     )
 }
